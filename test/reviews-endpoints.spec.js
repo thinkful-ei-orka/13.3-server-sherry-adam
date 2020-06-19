@@ -9,6 +9,7 @@ describe('Reviews Endpoints', function() {
   const {
     testThings,
     testUsers,
+    testReviews,
   } = helpers.makeThingsFixtures()
 
   before('make knex instance', () => {
@@ -30,7 +31,8 @@ describe('Reviews Endpoints', function() {
       helpers.seedThingsTables(
         db,
         testUsers,
-        testThings
+        testThings,
+        testReviews,
       )
     );
 
